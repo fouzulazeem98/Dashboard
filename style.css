@@ -1,0 +1,122 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* CSS-RESETS */
+
+
+body {
+    font-size: 62.5%;
+}
+
+:root {
+    --main-color: rgb(0, 0, 0);
+    --box-shadow: 0px 0px 4px 3px rgb(214, 214, 214);
+}
+
+a {
+    text-decoration: none;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+}
+
+/* COLUMS */
+.grid-2-col {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid-3-col {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.grid-4-col {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+/* COLUMS */
+
+
+
+/* ROWS */
+.grid-2-rows {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+
+.grid-3-rows {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+
+.grid-4-rows {
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+}
+
+/* ROWS */
+
+/* CSS-RESETS */
+
+/* left-side-container */
+
+/* logo */
+.logo {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2.5rem;
+    transform: translateX(5%);
+    font-weight: bold;
+    font-style: italic;
+    font-size: 30px;
+}
+
+/* logo */
+
+.left-side {
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 1rem;
+    padding: 1rem 1rem;
+    height: 100vh;
+    width: 15%;
+    gap: 5rem;
+    background-color: var(--main-color);
+    color: white;
+
+
+    & .side-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.5rem;
+
+        & a {
+            color: white;
+
+            & .fa-solid {
+                margin: 0 2rem;
+            }
+        }
+    }
+}
+
+
+.dasboard {
+    background-color: rgb(255, 255, 255);
+    width: 20vw;
+    border-radius: 5rem;
+    color: black !important;
+    padding: 12px 0;
+}
+
+/* left-side-container */
